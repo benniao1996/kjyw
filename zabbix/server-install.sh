@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "docker 快速部署zabbix"
+echo "docker 快速部署zabbix" &&
 #scp repo.zip 到线上服务器解压替换yum仓库
 #安装docker服务
 rpm -qa | grep docker* || yum -y install docker-ce docker* && systemctl restart docker && systemctl enable docker && 
